@@ -1,0 +1,509 @@
+{
+	"info": {
+		"_postman_id": "72b69661-503e-4db8-86c7-da412dd3aee3",
+		"name": "KMITL Sci",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23401015"
+	},
+	"item": [
+		{
+			"name": "News",
+			"item": [
+				{
+					"name": "Get Hello",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/hello/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"hello",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "newsId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "topic",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "20.02.24",
+									"type": "text"
+								},
+								{
+									"key": "datail",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "scr://localhost:3000/image/1.jpg",
+									"type": "text"
+								},
+								{
+									"key": "link",
+									"value": "google.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/news/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"news",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Data By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/news/id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"news",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/news/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"news",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "topic",
+									"value": "test-news",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "date",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "detail",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "link",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/news/6604e36589586e304fc83de1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"news",
+								"6604e36589586e304fc83de1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/news/id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"news",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/news/search/newsId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"news",
+								"search",
+								"newsId"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Activity",
+			"item": [
+				{
+					"name": "New Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "activeId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "topic",
+									"value": "test-active",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "00.00.00",
+									"type": "text"
+								},
+								{
+									"key": "detail",
+									"value": "test ka",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "จิตอาสา",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "img1.png",
+									"type": "text"
+								},
+								{
+									"key": "link",
+									"value": "google.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/activity/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"activity",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Data By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/activity/id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"activity",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/activity/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"activity",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Data By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "topic",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "date",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "detail",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "link",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/activity/Id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"activity",
+								"Id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/activity/id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"activity",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/activity/search/activeId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"activity",
+								"search",
+								"activeId"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Relation",
+			"item": [
+				{
+					"name": "New Data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "relateId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "topic",
+									"value": "test-relation",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "12.02.23",
+									"type": "text"
+								},
+								{
+									"key": "detail",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "ประชาสัมพันธ์",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "link",
+									"value": "google.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/relation/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"relation",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
