@@ -1,3 +1,4 @@
+const Activity = require('../../models/Activity');
 const News = require('../../models/Activity');
 const { activeModel } = require('./repository');
 class ActiveProcess {
@@ -35,7 +36,7 @@ class ActiveProcess {
         console.log(activeModel.id)
         console.log(activeModel.detail);
         
-        const findNews = await News.findOne({ _id: activeModel.id });
+        const findNews = await Activity.findOne({ _id: activeModel.id });
         if (findNews) {
             findNews.topic = activeModel.topic
             findNews.date = activeModel.date || findNews.date;

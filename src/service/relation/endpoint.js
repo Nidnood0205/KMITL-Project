@@ -18,6 +18,7 @@ class RelateEndpoint {
         this.relateModel.link = req.body.link
 
         console.log(req.body.image)
+        
         new RelateProcess().addRelateProcess(this.relateModel,res)
     }
 

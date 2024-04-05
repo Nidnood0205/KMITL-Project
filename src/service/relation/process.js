@@ -5,7 +5,7 @@ class RelateProcess {
     addRelateProcess = async (relateModel, res) => {
         console.log("process: " + relateModel.image)
 
-        const NewsObj = new News({
+        const NewsObj = new Relation({
             relateId: relateModel.relateId,
             topic: relateModel.topic,
             date: relateModel.date,
@@ -35,7 +35,7 @@ class RelateProcess {
         console.log(relateModel.detail);
         
         
-        const findNews = await News.findOne({ _id: relateModel.id });
+        const findNews = await Relation.findOne({ _id: relateModel.id });
         if (findNews) {
             findNews.topic = relateModel.topic
             findNews.date = relateModel.date || findNews.date;
